@@ -11,26 +11,36 @@ mkdir -p $BUILD_DIR
 git submodule update --init --recursive
 git submodule foreach git clean -xffd
 
-pushd util
+function autogen_util {
+    ACLOCAL="aclocal -I $BUILD_DIR/share/aclocal/" ./autogen.sh
+}
+
+pushd macros
 ./autogen.sh
+./configure --prefix=$BUILD_DIR
+make -j16 install
+popd
+
+pushd util
+autogen_util
 ./configure --prefix=$BUILD_DIR
 make -j16 install
 popd
 
 pushd util-cursor
-./autogen.sh
+autogen_util
 ./configure --prefix=$BUILD_DIR
 make -j16 install
 popd
 
 pushd util-keysyms
-./autogen.sh
+autogen_util
 ./configure --prefix=$BUILD_DIR
 make -j16 install
 popd
 
 pushd util-wm
-./autogen.sh
+autogen_util
 ./configure --prefix=$BUILD_DIR
 make -j16 install
 popd

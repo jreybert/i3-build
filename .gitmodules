@@ -34,3 +34,6 @@
 [submodule "yajl"]
 	path = yajl
 	url = https://github.com/lloyd/yajl
+[submodule "macros"]
+	path = macros
+	url = git://git.freedesktop.org/git/xorg/util/macros
