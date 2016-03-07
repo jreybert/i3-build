@@ -93,12 +93,6 @@ pushd yajl
 make -j16 install
 popd
 
-pushd pango
-./autogen.sh
-./configure --prefix=$BUILD_DIR
-make -j16 install
-popd
-
 pushd pixman
 ./autogen.sh
 ./configure --prefix=$BUILD_DIR
@@ -106,6 +100,12 @@ make -j16 install
 popd
 
 pushd cairo
+./autogen.sh
+./configure --prefix=$BUILD_DIR
+make -j16 install
+popd
+
+pushd pango
 ./autogen.sh
 ./configure --prefix=$BUILD_DIR
 make -j16 install
