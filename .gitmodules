@@ -43,3 +43,9 @@
 [submodule "util-image"]
 	path = util-image
 	url = https://cgit.freedesktop.org/xcb/util-image/
+[submodule "libxcb"]
+	path = libxcb
+	url = https://cgit.freedesktop.org/xcb/libxcb/
+[submodule "proto"]
+	path = proto
+	url = https://cgit.freedesktop.org/xcb/proto

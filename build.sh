@@ -64,8 +64,20 @@ sh ./autogen.sh
 make -j16 install
 popd
 
+pushd proto
+autogen_util
+./configure --prefix=$BUILD_DIR
+make -j16 install
+popd
+
+pushd libxcb
+autogen_util
+./configure --prefix=$BUILD_DIR
+make -j16 install
+popd
+
 pushd libxkbcommon
-./autogen.sh
+autogen_util
 ./configure --prefix=$BUILD_DIR
 make -j16 install
 popd
