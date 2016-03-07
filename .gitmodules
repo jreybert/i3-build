@@ -40,3 +40,6 @@
 [submodule "util-renderutil"]
 	path = util-renderutil
 	url = https://cgit.freedesktop.org/xcb/util-renderutil
+[submodule "util-image"]
+	path = util-image
+	url = https://cgit.freedesktop.org/xcb/util-image/

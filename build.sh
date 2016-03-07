@@ -1,6 +1,6 @@
 set -e
 
-# depends: gtk-doc
+# depends: gtk-doc gperf
 
 CUR_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 BUILD_DIR=$CUR_DIR/build
@@ -33,6 +33,13 @@ autogen_util
 make -j16 install
 popd
 
+pushd util-image
+autogen_util
+./configure --prefix=$BUILD_DIR
+make -j16 install
+popd
+
+# depends image
 pushd util-cursor
 autogen_util
 ./configure --prefix=$BUILD_DIR
