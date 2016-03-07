@@ -1,0 +1,36 @@
+[submodule "cairo"]
+	path = cairo
+	url = git://anongit.freedesktop.org/git/cairo
+[submodule "i3"]
+	path = i3
+	url = git://code.i3wm.org/i3
+[submodule "libev"]
+	path = libev
+	url = http://git.lighttpd.net/libev.git/
+[submodule "libxkbcommon"]
+	path = libxkbcommon
+	url = https://github.com/xkbcommon/libxkbcommon
+[submodule "pango"]
+	path = pango
+	url = git://git.gnome.org/pango
+[submodule "pixman"]
+	path = pixman
+	url = git://anongit.freedesktop.org/git/pixman.git
+[submodule "startup-notification"]
+	path = startup-notification
+	url = https://cgit.freedesktop.org/startup-notification/
+[submodule "util"]
+	path = util
+	url = https://cgit.freedesktop.org/xcb/util/
+[submodule "util-cursor"]
+	path = util-cursor
+	url = https://cgit.freedesktop.org/xcb/util-cursor
+[submodule "util-keysyms"]
+	path = util-keysyms
+	url = https://cgit.freedesktop.org/xcb/util-keysyms/
+[submodule "util-wm"]
+	path = util-wm
+	url = https://cgit.freedesktop.org/xcb/util-wm
+[submodule "yajl"]
+	path = yajl
+	url = https://github.com/lloyd/yajl
