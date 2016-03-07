@@ -37,3 +37,6 @@
 [submodule "macros"]
 	path = macros
 	url = git://git.freedesktop.org/git/xorg/util/macros
+[submodule "util-renderutil"]
+	path = util-renderutil
+	url = https://cgit.freedesktop.org/xcb/util-renderutil

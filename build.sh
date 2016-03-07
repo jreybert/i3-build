@@ -27,6 +27,12 @@ autogen_util
 make -j16 install
 popd
 
+pushd util-renderutil
+autogen_util
+./configure --prefix=$BUILD_DIR
+make -j16 install
+popd
+
 pushd util-cursor
 autogen_util
 ./configure --prefix=$BUILD_DIR
