@@ -1,6 +1,15 @@
 set -e
 
-# depends: gtk-doc gperf
+# depends:
+# gtkdocize (Fedora gtk-doc)
+# gperf 
+# docbook2pdf (Fedora docbook-utils-pdf)
+# ragel
+
+for bin in gtkdocize gperf docbook2pdf ragel; do
+    type $bin >/dev/null 2>&1 || { echo >&2 "$bin is necessary, install it."; exit 1; }
+done
+
 
 CUR_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 BUILD_DIR=$CUR_DIR/build
