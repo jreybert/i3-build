@@ -126,6 +126,14 @@ popd
 pushd pango
 ./autogen.sh
 ./configure --prefix=$BUILD_DIR
+make -j16 install-data
+popd
+
+wget "http://downloads.sourceforge.net/project/pcre/pcre/8.38/pcre-8.38.tar.bz2"
+tar xjf pcre-8.38.tar.bz2
+rm pcre-8.38.tar.bz2
+pushd pcre-8.38
+./configure --prefix=$BUILD_DIR
 make -j16 install
 popd
 
