@@ -105,6 +105,24 @@ pushd cairo
 make -j16 install
 popd
 
+pushd fontconfig
+./autogen.sh
+./configure --prefix=$BUILD_DIR
+make -j16 install
+popd
+
+pushd freetype2
+./autogen.sh
+./configure --prefix=$BUILD_DIR
+make -j16 install
+popd
+
+pushd harfbuzz
+./autogen.sh
+./configure --prefix=$BUILD_DIR
+make -j16 install
+popd
+
 pushd pango
 ./autogen.sh
 ./configure --prefix=$BUILD_DIR

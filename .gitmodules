@@ -49,3 +49,12 @@
 [submodule "proto"]
 	path = proto
 	url = https://cgit.freedesktop.org/xcb/proto
+[submodule "fontconfig"]
+	path = fontconfig
+	url = https://cgit.freedesktop.org/fontconfig/
+[submodule "freetype2"]
+	path = freetype2
+	url = http://git.savannah.gnu.org/cgit/freetype/freetype2.git/
+[submodule "harfbuzz"]
+	path = harfbuzz
+	url = https://github.com/behdad/harfbuzz
